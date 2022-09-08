@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body
+{
+  background: url(img/eggpattern.jpg);
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position:center;
+}
+
+section
+{
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+}
+section .user h3
+{
+  background: white;
+  border-radius: 30px;
+  font-size: 2vw;
+  padding: 3px;
+  display: block;
+  float: left;
+  color: rgb(255, 0, 170);
+}
+section .crop img
+{
+  background: white;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  object-fit: cover;
+ border-radius: 50%;
+ display: block;
+  float: left;
+}
+
+.back
+{
+  position: relative;
+  float: right;
+}
+
+.back a {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #fafaa3 5%, #f8ff24 100%);
+	background-color:#fafaa3;
+	border-radius:24px;
+	border:2px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ff00ae;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffe524;
+}
+.back a:hover {
+	background:linear-gradient(to bottom, #ff6224 5%, #a6faa3 100%);
+	background-color:#7824ff;
+}
+.back a:active {
+	position:relative;
+	top:1px;
+}
+
+.delete
+{
+  position: absolute;
+}
+
+.delete a {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #fafaa3 5%, #f8ff24 100%);
+	background-color:#fafaa3;
+	border-radius:24px;
+	border:2px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ff00ae;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:12px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffe524;
+}
+.delete a:hover {
+	background:linear-gradient(to bottom, #ff6224 5%, #a6faa3 100%);
+	background-color:#7824ff;
+}
+.delete a:active {
+	position:relative;
+	top:1px;
+}
+
+form
+{
+  width: 100%;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 10px;
+  /* margin: 20px auto; */
+}
+input
+{
+  width: 70%;
+  padding: 0px 20px;
+  height: 40px;
+  font-size: 22px;
+
+}
+.box
+{
+  position: relative;
+  background: #73a7a5;
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.box h3
+{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin: 10px;
+  font-weight: 400;
+}
+
+.box p
+{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+.box  input::-webkit-input-placeholder { /* Edge */
+  color: #8bbbb3;
+}
+
+.box  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #8bbbb3;
+}
+
+.box input::placeholder {
+  color: #8bbbb3;
+}
+
+button
+{
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: #262626;
+  font-size: 16px;
+}
+button:hover
+{
+  background: #069370;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.vote h1
+{
+  color: white;
+  text-align: center;
+}
+
+.banner
+{
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  background: rgb(245,0,117);
+  background: linear-gradient(90deg, rgba(245,0,117,0.6) 15%, rgba(0,207,193,0.6) 61%, rgba(246,255,130,0.6) 100%);  filter: blur(80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .content
+{
+  max-width: 550px;
+}
+.banner .content img
+{
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.banner .content h2
+{
+  color: #fff;
+  font-weight: 500;
+  font-size: 2em;
+}
+.banner .content p
+{
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 300;
+  margin: 15px 0 25px;
+}
+.banner .content a
+{
+  position: relative;
+  text-transform: uppercase;
+  background: #fff;
+  color: #111;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+}
+.banner .content a:hover
+{
+    background: rgb(248, 43, 122);
+    color: rgb(36, 219, 243);
+}
+
+.trailer
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.trailer.active
+{
+  visibility: visible;
+  opacity: 1;
+}
+.trailer video
+{
+  position: relative;
+  max-width: 900px;
+  outline: none;
+}
+.judges
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.judges.active
+{
+  visibility: visible;
+  opacity: 1;
+}
+.judges video
+{
+  position: relative;
+  max-width: 900px;
+  outline: none;
+}
+.close
+{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  filter: invert(1);
+  max-width: 32px;
+}
+.judgevote
+{
+  position: relative;
+  left: 35%;
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #ff573a 5%, #cf4646 100%);
+	background-color:#63eed0;
+	border-radius:6px;
+	border:1px solid #3866a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 100px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7cacde;
+}
+
+.judgevote span
+{
+  font-size: x-large;
+  color: #fff;
+}
+.judgevote:hover {
+	background:linear-gradient(to bottom, #cf46a6 5%, #e0ee63 100%);
+	background-color:#e2cdcd;
+}
+.like
+{
+  position: relative;
+  left: 35%;
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63ee6f 5%, #46cf5d 100%);
+	background-color:#63b8ee;
+	border-radius:6px;
+	border:1px solid #3866a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 100px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7cacde;
+}
+
+.like span
+{
+  font-size: x-large;
+  color: #fff;
+}
+.like:hover {
+	background:linear-gradient(to bottom, #cf46a6 5%, #e0ee63 100%);
+	background-color:#e2cdcd;
+}
+.like:active {
+	position:relative;
+	top:1px;
+}
+
+.commentsin form
+{
+  left: 24%;
+  width: 66%;
+}
+
+.logout 
+{ 
+  margin: 5px;
+  padding: 5px;
+  background:linear-gradient(to bottom, #cf46a6 5%, #e0ee63 100%);
+	background-color:#e2cdcd;
+}
+
+.logout h3 
+{
+  text-align: center;
+  color: #fff;
+}
+.logout a
+{
+  text-decoration: none;
+}
+.logout:hover
+{
+  background:linear-gradient(to bottom, #4f46cf 5%, #63eeb9 100%);
+}
+.commentsin 
+{
+  margin-left: 12%;
+  width: 76%;
+}
+
+.commentsin textarea
+{
+  background-color: #78fc7f;
+  width: 100%;
+  padding: 0px 20px;
+  height: 160px;
+  font-size: 22px;
+}
+.commentsin button
+{
+  position: relative;
+  width: 20%;
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color:#63b8ee;
+	border-radius:6px;
+	border:1px solid #3866a3;
+	display:inline-block;
+	cursor:pointer;
+	color:#14396a;
+	font-family:Arial;
+	font-size:25px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #7cacde;
+}
+
+.commentsin button span
+{
+  font-size: larger;
+  color: #fff;
+}
+.commentsin button:hover {
+	background:linear-gradient(to bottom, #cf46a6 5%, #e0ee63 100%);
+	background-color:#e2cdcd;
+}
+
+.commentsin p
+{
+  background-color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+  color: rgb(255, 0, 0);
+}
+
+.commentsout
+{
+  margin-left: 12%;
+  width: 76%;
+  background:linear-gradient(to bottom, #cf46a6 5%, #2724f0 100%);
+	background-color:#e2cdcd;
+
+  
+}
+
+.reviewinfo h5, h4
+{
+  padding: 1%;
+  color: #fff;
+   
+}
+
+.reviewinfo img
+{
+  width: 5%;
+  height: 5%;
+  object-fit: cover;
+}
+
+
+
+@media (max-width: 991px)
+{
+  .trailer video
+  {
+    max-width: 90%;
+  }
+}
